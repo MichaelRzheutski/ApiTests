@@ -1,0 +1,9 @@
+{
+  "id": "predicate:idPredicate",
+  "products": "predicate:productsPredicate",
+  "total": "predicate:totalPredicate",
+  "discountedTotal": "predicate:discountedTotalPredicate",
+  "userId": "predicate:userIdPredicate",
+  "totalProducts": "predicate:totalProductsPredicate",
+  "totalQuantity": "predicate:totalQualityPredicate"
+}

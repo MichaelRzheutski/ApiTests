@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Api suite" verbose="1" parallel="tests" thread-count="1">
+    <test name="Api product tests" parallel="methods" thread-count="1">
+        <classes>
+            <class name="com.solvd.api_tests.ProductTest"/>
+        </classes>
+    </test>
+    <test name="Api cart tests">
+        <classes>
+            <class name="com.solvd.api_tests.CartTest"/>
+        </classes>
+    </test>
+</suite>

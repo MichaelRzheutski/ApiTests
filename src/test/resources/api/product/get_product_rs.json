@@ -1,0 +1,13 @@
+{
+  "id": "predicate:idPredicate",
+  "title": "${product.title}",
+  "description": "${product.description}",
+  "price": "predicate:pricePredicate",
+  "discountPercentage": "predicate:discountPercentagePredicate",
+  "rating": "predicate:ratingPredicate",
+  "stock": "predicate:stockPredicate",
+  "brand": "${product.brand}",
+  "category": "${product.category}",
+  "thumbnail": "skip",
+  "images": "skip"
+}
