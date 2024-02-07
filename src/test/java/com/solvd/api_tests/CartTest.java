@@ -1,6 +1,6 @@
 package com.solvd.api_tests;
 
-import com.solvd.api_tests.api.GetCartById;
+import com.solvd.api_tests.api.cart.GetCartById;
 import com.solvd.api_tests.domain.Cart;
 import com.solvd.api_tests.domain.Product;
 import com.zebrunner.carina.api.apitools.validation.JsonComparatorContext;
@@ -14,17 +14,17 @@ import java.util.Objects;
 public class CartTest {
     @DataProvider(name = "validCartValues")
     public Object[][] validCartValues() {
-        return new Object[][] {
+        return new Object[][]{
                 {
-                    new Cart(
-                            1,
-                            new Product[5],
-                            2328,
-                            1941,
-                            97,
-                            5,
-                            10
-                    )
+                        new Cart(
+                                1,
+                                new Product[5],
+                                2328,
+                                1941,
+                                97,
+                                5,
+                                10
+                        )
                 }
         };
     }

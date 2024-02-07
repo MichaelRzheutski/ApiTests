@@ -1,9 +1,6 @@
 package com.solvd.api_tests;
 
-import com.solvd.api_tests.api.DeleteProductById;
-import com.solvd.api_tests.api.GetProductById;
-import com.solvd.api_tests.api.PostProduct;
-import com.solvd.api_tests.api.PutProductById;
+import com.solvd.api_tests.api.product.*;
 import com.solvd.api_tests.domain.Product;
 import com.zebrunner.carina.api.apitools.validation.JsonComparatorContext;
 import com.zebrunner.carina.api.http.HttpResponseStatusType;
