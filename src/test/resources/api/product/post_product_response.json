@@ -1,0 +1,10 @@
+{
+  "id": 101,
+  "title": "${product.title}",
+  "description": "${product.description}",
+  "price": "${product.price}",
+  "rating": "${product.rating}",
+  "stock": "${product.stock}",
+  "brand": "${product.brand}",
+  "category": "${product.category}"
+}

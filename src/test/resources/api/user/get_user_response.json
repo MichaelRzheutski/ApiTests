@@ -1,0 +1,8 @@
+{
+  "id": "${user.id}",
+  "firstName": "${user.firstName}",
+  "lastName": "${user.lastName}",
+  "maidenName": "${user.maidenName}",
+  "age": "${user.age}",
+  "gender": "${user.gender}"
+}
