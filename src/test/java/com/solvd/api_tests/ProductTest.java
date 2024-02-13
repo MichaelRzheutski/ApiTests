@@ -34,7 +34,7 @@ public class ProductTest {
     }
 
     @Test(description = "Verify getting product by id", dataProvider = "validProductValues")
-    public void verifyGetProductById(Product product) {
+    public void verifyGetProductByIdTest(Product product) {
         GetProductById getProductById = new GetProductById(product.getId());
         getProductById.addProperty("product", product);
 
@@ -52,7 +52,7 @@ public class ProductTest {
     }
 
     @Test(description = "Verify creating product", dataProvider = "validProductValues")
-    public void verifyPostProduct(Product product) {
+    public void verifyPostProductTest(Product product) {
         PostProduct postProduct = new PostProduct();
         postProduct.addProperty("product", product);
         postProduct.expectResponseStatus(HttpResponseStatusType.OK_200);
@@ -61,7 +61,7 @@ public class ProductTest {
     }
 
     @Test(description = "Verify deleting product by id", dataProvider = "validProductValues")
-    public void verifyDeleteProductById(Product product) {
+    public void verifyDeleteProductByIdTest(Product product) {
         DeleteProductById deleteProductById = new DeleteProductById(product.getId());
         deleteProductById.addProperty("product", product);
         deleteProductById.callAPIExpectSuccess();
@@ -88,7 +88,7 @@ public class ProductTest {
     }
 
     @Test(description = "Verify updating product by id", dataProvider = "validProductValues")
-    public void verifyPutProductById(Product product) {
+    public void verifyPutProductByIdTest(Product product) {
         PutProductById putProductById = new PutProductById(product.getId());
         product.setPrice(999);
         putProductById.addProperty("product", product);

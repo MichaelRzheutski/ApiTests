@@ -30,7 +30,7 @@ public class CartTest {
     }
 
     @Test(description = "Verify getting cart by id", dataProvider = "validCartValues")
-    public void verifyGetCartById(Cart cart) {
+    public void verifyGetCartByIdTest(Cart cart) {
         GetCartById getCartById = new GetCartById(cart.getId());
         getCartById.addProperty("cart", cart);
 

@@ -33,7 +33,7 @@ public class UserTest {
     }
 
     @Test(description = "Verify getting user by id", dataProvider = "validUserValues")
-    public void verifyGetUserById(User user) {
+    public void verifyGetUserByIdTest(User user) {
         GetUserById getUserById = new GetUserById(user.getId());
         getUserById.addProperty("user", user);
 
@@ -42,7 +42,7 @@ public class UserTest {
     }
 
     @Test(description = "Verify creating user", dataProvider = "validUserValues")
-    public void verifyPostProduct(User user) {
+    public void verifyPostProductTest(User user) {
         PostUser postUser = new PostUser();
         postUser.addProperty("user", user);
         postUser.expectResponseStatus(HttpResponseStatusType.OK_200);
@@ -51,7 +51,7 @@ public class UserTest {
     }
 
     @Test(description = "Verify deleting user by id", dataProvider = "validUserValues")
-    public void verifyDeleteUserById(User user) {
+    public void verifyDeleteUserByIdTest(User user) {
         DeleteUserById deleteUserById = new DeleteUserById(user.getId());
         deleteUserById.addProperty("user", user);
         deleteUserById.callAPIExpectSuccess();
